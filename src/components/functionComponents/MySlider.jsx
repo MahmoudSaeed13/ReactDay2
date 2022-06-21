@@ -4,10 +4,9 @@ export const MySlider = ({ carouselItems }) => {
 
 
     return (
-        <Carousel>
+        <Carousel className='vh-100' >
             {
                 carouselItems.map(item => {
-                    console.log(item);
                     return (
                         <Carousel.Item key={item.id}>
                             <img

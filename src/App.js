@@ -4,6 +4,7 @@ import { MyFooter } from './components/functionComponents/MyFooter';
 import { MySlider } from './components/functionComponents/MySlider';
 import MyCounter from './components/MyCounter';
 import { MyCard } from './components/functionComponents/MyCard';
+import { Container, Row } from 'react-bootstrap';
 
 
 
@@ -58,14 +59,19 @@ function App() {
 
       <MySlider carouselItems={carouselItems} />
 
-      {
-        product.map((item, index) => {
 
-          return (
-            <MyCard key={item.id} title={item.title} linkTitle={item.linkTitle} price={item.price} />
-          )
-        })
-      }
+      <Container>
+        <Row>
+          {
+            product.map((item, index) => {
+
+              return (
+                <MyCard key={item.id} title={item.title} linkTitle={item.linkTitle} price={item.price} />
+              )
+            })
+          }
+        </Row>
+      </Container>
 
       <MyCounter />
 
