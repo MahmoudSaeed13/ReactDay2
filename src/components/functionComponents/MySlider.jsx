@@ -11,6 +11,7 @@ export const MySlider = ({ carouselItems }) => {
                     return (
                         <Carousel.Item key={item.id}>
                             <img
+                                className='d-block w-100'
                                 src={item.img}
                                 alt="First slide"
                             />

@@ -51,7 +51,8 @@ function App() {
 
 
   return (
-    <div>
+
+    <>
 
       <MyNav />
 
@@ -69,7 +70,8 @@ function App() {
       <MyCounter />
 
       <MyFooter />
-    </div>
+
+    </>
 
   );
 }
